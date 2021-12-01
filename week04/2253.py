@@ -3,7 +3,8 @@ input = sys.stdin.readline
 
 if __name__ == '__main__' :
     N, M = map(int,input().split())
-    # 
+    # array = [[0]*11 for i in range(10)] 이렇게 쓰면 11*10 리스트 만든다. 11열,10행
+    #dp에는 위치를 행으로 , 속도를 열로 둔다.
     dp = [[float('inf')] * (int((2 * N) ** 0.5) + 2) for _ in range(N + 1)]
     dp[1][0] =  0
     
