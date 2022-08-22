@@ -31,7 +31,7 @@ for (let i = 0; i < numbers.length; i++){
 
     
 //예제용
-let input = require('fs').readFileSync('예제.txt').toString().split('\n');
+let input = require('fs').readFileSync('test.txt').toString().split('\n');
 
 
 //readline으로 사용하는 법
